@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: #F1E9BB;
+    
+}
+
+
+header{
+    background-color: #F3C363;
+    height: 8rem;
+    width: 100%;
+    
+}
+
+footer{
+    
+    bottom: 0;
+    background-color: #F3C363;
+    height: 8rem;
+    width: 100%;
+}
+
+article{
+    display: flex;
+    width: 100%;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

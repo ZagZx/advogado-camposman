@@ -1,0 +1,14 @@
+Vermelho
+#C92C2C
+
+laranja -> botões
+#CF6123
+
+amarelo claro -> header e footer
+#F3C363
+
+Bege claro -> background && hover dos botões
+#F1E9BB
+
+Marrom
+#5C483A

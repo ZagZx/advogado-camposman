@@ -10,7 +10,7 @@ article{
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    background-color: #F3C363;   
+    background-color: #F1E9BB;   
 }
 .info{
     flex-shrink: 0;
@@ -33,7 +33,7 @@ article{
     gap: 2em;
 }
 #instagram{
-    width: 7em;
+    width: 8em;
 }
 #email::before{
     content: url(../images/envelope-at-fill.svg);
@@ -56,7 +56,7 @@ article{
     width: auto;
     background-color: #CF6123;
     position: absolute;
-    right: 45.5%;
+    right: 44.8%;
     border-radius: 10px;
     top: 22em;
     display: flex;
@@ -69,7 +69,7 @@ article{
     width: auto;
     background-color: #CF6123;
     position: absolute;
-    right: 31%;
+    right: 26%;
     border-radius: 10px;
     top: 22em;
     display: flex;
@@ -82,10 +82,16 @@ article{
     width: auto;
     background-color: #CF6123;
     position: absolute;
-    right: 41%;
+    right: 40%;
     border-radius: 10px;
     top: 22em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    padding-bottom: 1em;
 }

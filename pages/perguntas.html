@@ -94,14 +94,14 @@
             visibility: collapse;
         }
 
-        .perguntas div {
+        /* .perguntas div {
             background-color: #CF6123;
             min-height: 1.5em;
             font-size: 1em;
             border-radius: 10px;
             display: inline;
             max-width: 90%;
-        }
+        } */
 
         .perguntas {
             display: flex;
@@ -109,12 +109,15 @@
             gap: 0.4em;
             align-items: center;
         }
-
         .accordion>input[type="checkbox"] {
             position: absolute;
             left: -100vw;
         }
-
+        .accordion h2{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0.5em;
+        }
         .accordion .content {
             overflow-y: hidden;
             height: 0;
@@ -137,16 +140,6 @@
 <body>
 
     <header>
-        <section class="accordion">
-            <input type="checkbox" name="collapse" value="" id="handle1">
-            <h2 class="handle">OPA
-                <label for="handle1">Texto</label>
-            </h2>
-            <div class="content">
-                <p>EU VOU</p>
-                <p>AAAA</p>
-            </div>
-        </section>
     </header>
 
     <div class="container">
@@ -154,50 +147,134 @@
     </div>
 
     <div class="perguntas">
-        <div id="pergunta1">Quanto tempo demora a tramitação de um processo na justiça?</div>
-        <div id="resposta1">OOOOOOOH</div>
-        <div id="pergunta2">Eu posso contratar o escritório Sousa & Alves Advogados pela internet?</div>
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">Quanto tempo demora a tramitação de um processo na justiça?
+                <label for="handle1"><img src="../images/arrow-down.svg" alt=""></label>
+            </h2>
+            <div class="content">
+                <p>A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
+            </div>
+        </section>
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">Eu posso contratar o escritório Sousa & Alves Advogados pela internet?
+                <label for="handle1"><img src="../images/arrow-down.svg" alt=""></label>
+            </h2>
+            <div class="content">
+                <p>Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.</p>
+            </div>
+        </section>
 
-        <div id="pergunta3">Obrigatoriamente, o atendimento com o advogado deve ser presencial?</div>
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Obrigatoriamente, o atendimento com o advogado deve ser presencial?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Eu posso entrar em contato com o escritório para tirar algumas dúvidas sobre o meu caso?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Como obter mais informações sobre o meu caso antes de contratar um advogado?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Em que áreas o escritório Sousa & Alves Advogados atua?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Por que é importante procurar um advogado especialista na minha área de interesse?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Como saber se o advogado é especialista na minha área de interesse para trabalhar na minha causa?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Já tive experiências negativas com advogados que não me deram o resultado esperado. O que posso esperar do escritório Sousa & Alves Advogados?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                É melhor contratar um advogado que atua sozinho ou um escritório?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                O Sousa & Alves Advogados atende somente pessoas físicas?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                O Escritório Sousa & Alves tem somente atendimento local ou atende nacionalmente?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Como contatar o Escritório Sousa & Alves Advogados?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Quais as condições de pagamento?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
 
-        <div id="pergunta4">Eu posso entrar em contato com o escritório para tirar algumas dúvidas sobre o meu caso?
-        </div>
-
-        <div id="pergunta5">Como obter mais informações sobre o meu caso antes de contratar um advogado?</div>
-
-        <div id="pergunta6">Em que áreas o escritório Sousa & Alves Advogados atua?</div>
-
-        <div id="pergunta7">Por que é importante procurar um advogado especialista na minha área de interesse?</div>
-
-        <div id="pergunta8">Como saber se o advogado é especialista na minha área de interesse para trabalhar na minha
-            causa?</div>
-        <div class="resposta">Você pode verificar a formação do advogado, suas especializações e histórico de casos
-            similares ao seu.</div>
-
-        <div id="pergunta9">Já tive experiências negativas com advogados que não me deram o resultado esperado. O que
-            posso esperar do escritório Sousa & Alves Advogados?</div>
-        <div class="resposta">O escritório se compromete a prestar serviços com dedicação, transparência e foco no
-            melhor resultado possível para o cliente.</div>
-
-        <div id="pergunta10">É melhor contratar um advogado que atua sozinho ou um escritório?</div>
-        <div class="resposta">Depende do seu caso. Escritórios oferecem uma gama de especialistas em diversas áreas,
-            enquanto advogados solos podem ter uma abordagem mais personalizada.</div>
-
-        <div id="pergunta11">O Sousa & Alves Advogados atende somente pessoas físicas?</div>
-        <div class="resposta">Não, o escritório também atende empresas, oferecendo soluções jurídicas empresariais e
-            corporativas.</div>
-
-        <div id="pergunta12">O Escritório Sousa & Alves tem somente atendimento local ou atende nacionalmente?</div>
-        <div class="resposta">O escritório oferece atendimento nacional, com cobertura em várias regiões do Brasil.
-        </div>
-
-        <div id="pergunta13">Como contatar o Escritório Sousa & Alves Advogados?</div>
-        <div class="resposta">Você pode entrar em contato através do telefone, e-mail ou preenchendo o formulário de
-            contato no site oficial.</div>
-
-        <div id="pergunta14">Quais as condições de pagamento?</div>
-        <div class="resposta">As condições de pagamento variam conforme o tipo de serviço, e podem ser negociadas
-            diretamente com o escritório.</div>
     </div>
 
     <footer></footer>

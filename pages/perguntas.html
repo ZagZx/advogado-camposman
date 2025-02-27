@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo 1</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            align-content: center;
+            background-color: #F1E9BB;
+        }
+
+        .container {
+            align-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container h2 {
+            color: rgb(112, 112, 112);
+            text-align: center;
+            padding: 150px;
+        }
+
+        .container h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+
+
+        }
+
+        #pergunta1:hover::after {
+            content: "A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da carga de trabalho do tribunal, mas geralmente leva de meses a anos.";
+        }
+
+        #pergunta2:hover::after {
+            content: "Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.";
+        }
+
+        #pergunta3:hover::after {
+            content: "Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.";
+        }
+
+        #pergunta4:hover::after {
+            content: "Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas sobre o seu caso.";
+        }
+
+        #pergunta5:hover::after {
+            content: "Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais informações.";
+        }
+
+        #pergunta6:hover::after {
+            content: "O escritório atua nas áreas de direito trabalhista, civil, empresarial, entre outras.";
+        }
+
+        #pergunta7:hover::after {
+            content: "Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver seu caso de maneira mais eficiente.";
+        }
+
+        #pergunta8:hover::after {
+            content: "Você pode verificar a formação do advogado, suas especializações e histórico de casos similares ao seu.";
+        }
+
+        #pergunta9:hover::after {
+            content: "O escritório Sousa & Alves Advogados foca em resultados eficazes, com uma abordagem personalizada e dedicada para cada cliente, buscando sempre a melhor solução para os seus problemas jurídicos.";
+        }
+
+        #pergunta10:hover::after {
+            content: "A escolha entre um advogado individual ou um escritório depende do tipo de caso. Escritórios oferecem uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um atendimento mais próximo e personalizado.";
+        }
+
+        #pergunta11:hover::after {
+            content: "O escritório Sousa & Alves Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo soluções adaptadas para as necessidades de cada cliente.";
+        }
+
+        #pergunta12:hover::after {
+            content: "O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos tipos de serviços jurídicos.";
+        }
+
+        #pergunta13:hover::after {
+            content: "Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente pelo formulário de contato no site oficial.";
+        }
+
+        #pergunta14:hover::after {
+            content: "As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com o tipo de serviço que você precisa.";
+        }
+
+        #resposta1 {
+            visibility: collapse;
+        }
+
+        /* .perguntas div {
+            background-color: #CF6123;
+            min-height: 1.5em;
+            font-size: 1em;
+            border-radius: 10px;
+            display: inline;
+            max-width: 90%;
+        } */
+
+        .perguntas {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 0.4em;
+            align-items: center;
+        }
+        .accordion>input[type="checkbox"] {
+            position: absolute;
+            left: -100vw;
+        }
+        .accordion h2{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0.5em;
+        }
+        .accordion .content {
+            overflow-y: hidden;
+            height: 0;
+            transition: height 1s ease;
+        }
+
+        .accordion>input[type="checkbox"]:checked~.content {
+            height: auto;
+            overflow: visible;
+        }
+
+        .accordion label {
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <div class="container">
+        <h2>Perguntas frequentes</h2>
+    </div>
+
+    <div class="perguntas">
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">Quanto tempo demora a tramitação de um processo na justiça?
+                <label for="handle1"><img src="../images/arrow-down.svg" alt=""></label>
+            </h2>
+            <div class="content">
+                <p>A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
+            </div>
+        </section>
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">Eu posso contratar o escritório Sousa & Alves Advogados pela internet?
+                <label for="handle1"><img src="../images/arrow-down.svg" alt=""></label>
+            </h2>
+            <div class="content">
+                <p>Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.</p>
+            </div>
+        </section>
+
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Obrigatoriamente, o atendimento com o advogado deve ser presencial?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Eu posso entrar em contato com o escritório para tirar algumas dúvidas sobre o meu caso?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Como obter mais informações sobre o meu caso antes de contratar um advogado?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Em que áreas o escritório Sousa & Alves Advogados atua?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Por que é importante procurar um advogado especialista na minha área de interesse?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Como saber se o advogado é especialista na minha área de interesse para trabalhar na minha causa?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Já tive experiências negativas com advogados que não me deram o resultado esperado. O que posso esperar do escritório Sousa & Alves Advogados?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                É melhor contratar um advogado que atua sozinho ou um escritório?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                O Sousa & Alves Advogados atende somente pessoas físicas?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                O Escritório Sousa & Alves tem somente atendimento local ou atende nacionalmente?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Como contatar o Escritório Sousa & Alves Advogados?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+        <section class="accordion">
+            <input type="checkbox" name="collapse" value="" id="handle1">
+            <h2 class="handle">
+                Quais as condições de pagamento?
+                <label for="handle1"></label>
+            </h2>
+            <div class="content"></div>
+        </section>
+        
+
+    </div>
+
+    <footer></footer>
+
+</body>
+
+</html>

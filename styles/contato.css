@@ -95,3 +95,22 @@ footer{
     align-items:end;
     padding-bottom: 1em;
 }
+#img{
+    margin-top: 1em;
+}
+img{
+    height: 150px;
+    border-radius: 100%;
+    border: 0.4em solid #F3C363;
+}
+header{
+    justify-content: space-between;
+}
+#links{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logolink{
+    background-color: transparent;
+}

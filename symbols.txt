@@ -1,0 +1,8 @@
+seta pra baixo:
+	&#11167;
+seta pra cima:
+    &#11165;
+seta esquerda:
+    &#11164;
+seta direita:
+    &#11166;

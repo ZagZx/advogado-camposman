@@ -78,7 +78,7 @@ article div .card {
     flex-grow: 0;
     flex-shrink: 0;
     min-height: 20em;
-    max-width: 24em;
+    max-width: 22em;
     overflow-y: scroll;
     max-height: 20em;
     scrollbar-color: #CF6123 #F1E9BB;

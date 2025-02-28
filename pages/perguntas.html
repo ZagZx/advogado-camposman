@@ -167,6 +167,17 @@
         }
     </style>
     <link rel="stylesheet" type="" href="../styles/perguntas.css">
+    <script>
+        function trocaSeta(id){
+            const seta = document.getElementById(id)
+            if (seta.innerHTML === "&#11166;"){
+                seta.innerHTML = "&#11167;"
+            }
+            else{
+                seta.innerHTML = "&#11166;"
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -183,7 +194,7 @@
         <section id="accordion1" style="width: auto; padding: 0;">
             <input type="checkbox" name="collapse" value="" id="handle1">
             <h2 id="handle1">Quanto tempo demora a tramitação de um processo na justiça?
-                <label for="handle1">&#11167;</label>
+                <label id="label1"onclick="trocaSeta(this.id)" for="handle1">&#11166;</label>
             </h2>
             <div id="content1">
                 <p style="max-width: 40em;">A tramitação de um processo na justiça pode variar dependendo da

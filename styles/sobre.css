@@ -28,7 +28,11 @@ article div {
     
 }
 .romerito p {
+
 font-size: x-large;
+margin-top: 30px;
+
+
 
 
 }
@@ -50,6 +54,7 @@ article div .card {
     background-color: #5C483A;
     border-radius: 5%;
     max-width: 37em;
+    box-shadow: 7px 7px 1.5em black;
     
 
 
@@ -79,11 +84,10 @@ article div .card {
     flex-shrink: 0;
     min-height: 20em;
     max-width: 22em;
-    overflow-y: scroll;
+    overflow-y: hidden;
     max-height: 20em;
-    scrollbar-color: #CF6123 #F1E9BB;
-    scrollbar-width: thin;
     font-size: 1.3em;
+    color: #FFFFFF;
 }
 
 

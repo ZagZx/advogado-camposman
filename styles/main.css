@@ -6,22 +6,23 @@
 
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: #F1E9BB;
-    
+
 }
 
 
-header{
+header {
     background-color: #F3C363;
     height: 8rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    div{
+
+    div {
         width: 70%;
         display: flex;
         justify-content: space-around;
@@ -29,26 +30,27 @@ header{
     }
 }
 
-header a{
+header a {
     text-decoration: none;
     background-color: #CF6123;
     color: white;
     padding: 1rem;
     border-radius: 0.5rem;
 }
-header a:hover{
+
+header a:hover {
     background-color: #F1E9BB;
     color: #CF6123;
 }
 
-footer{
+footer {
     bottom: 0;
     background-color: #F3C363;
     height: 8rem;
     width: 100%;
 }
 
-article{
+article {
     min-height: 100vh;
     display: flex;
     width: 100%;
@@ -57,7 +59,7 @@ article{
     z-index: 1;
 }
 
-#logo{
+#logo {
     background-color: transparent;
     height: 150px;
     border-radius: 100%;
@@ -68,6 +70,7 @@ article{
     width: 150px;
     z-index: 2;
 }
-#logoa{
+
+#logoa {
     background-color: transparent;
 }

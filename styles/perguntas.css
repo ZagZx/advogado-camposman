@@ -70,6 +70,7 @@
 #accordion14>input[type="checkbox"]:checked~#content14 {
   height: auto;
   overflow: visible;
+  border-top: 0.2em solid black;
 }
 
 #accordion1 label,
@@ -90,9 +91,10 @@
   cursor: pointer;
 }
 
-header{
+header {
   z-index: 1;
 }
-body div{
+
+body div {
   z-index: 0;
 }

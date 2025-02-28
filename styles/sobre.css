@@ -3,10 +3,10 @@ article div {
     justify-content: space-evenly;
     margin-top: 20px;
     align-items: center;
-    
+
 }
 
-#merchan{
+#merchan {
     width: 100%;
 }
 
@@ -18,19 +18,20 @@ article div {
 
 }
 
-.romerito img{
+.romerito img {
 
     max-height: 200px;
     width: max-content;
     display: flex;
     flex-direction: row;
     border-radius: 80.5%;
-    
+
 }
+
 .romerito p {
 
-font-size: x-large;
-margin-top: 30px;
+    font-size: x-large;
+    margin-top: 30px;
 
 
 
@@ -38,10 +39,10 @@ margin-top: 30px;
 }
 
 .frase {
-   text-align: center;
-   align-items: center;
-   font-size: xx-large;
-   max-width: 12em;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    max-width: 12em;
 }
 
 article div .card {
@@ -55,7 +56,7 @@ article div .card {
     border-radius: 5%;
     max-width: 37em;
     box-shadow: 7px 7px 1.5em black;
-    
+
 
 
 }
@@ -65,21 +66,21 @@ article div .card {
     text-align: center;
     margin-top: 5%;
     color: #FFFFFF;
-    
+
 
 }
 
-.barra{ 
+.barra {
     width: 80%;
     height: 1px;
     margin-top: 0;
     align-self: center;
     background-color: rgb(255, 255, 255);
     margin-bottom: 0;
-    
+
 }
 
-.card p{
+.card p {
     flex-grow: 0;
     flex-shrink: 0;
     min-height: 20em;
@@ -89,5 +90,3 @@ article div .card {
     font-size: 1.3em;
     color: #FFFFFF;
 }
-
-

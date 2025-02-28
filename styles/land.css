@@ -1,15 +1,17 @@
-article{
-    img{
+article {
+    img {
         width: 20rem;
     }
-    div{
+
+    div {
         /* margin-top: 2rem; */
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 800px;
     }
-    #imagem{
+
+    #imagem {
         background-image: url('../images/endereco.webp');
         width: 100%;
         height: 21em;
@@ -17,59 +19,69 @@ article{
         background-position-y: 25%;
         opacity: 70%;
     }
-    .titulo{
+
+    .titulo {
         display: flex;
         flex-direction: row;
         width: 100%;
         background-color: #F3C363;
         padding: 1em 0;
         justify-content: center;
-        div{
+
+        div {
             display: flex;
             flex-direction: row;
-            gap: 1em;   
+            gap: 1em;
             justify-content: center;
-            img{
+
+            img {
                 width: 70px;
             }
 
         }
     }
-    #localizacao{
+
+    #localizacao {
         width: 100%;
         padding: 1em 0;
-        span{
+
+        span {
             max-width: 80%;
         }
     }
-    #depdiv{
+
+    #depdiv {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
         padding: 3em 0;
     }
-    #depoimento{
+
+    #depoimento {
         display: flex;
         flex-direction: row;
         gap: 1em;
 
         /* background-color: #5C483A; */
         padding: 1em;
-        img{
+
+        img {
             width: 5em;
             height: 5em;
             border-radius: 1em;
             border: 2px solid #5C483A;
         }
-        span{
+
+        span {
             border-top: 2px solid #5C483A;
             padding-top: 1em;
             text-align: justify;
         }
-       
+
     }
-    .botaoslide{
+
+    .botaoslide {
         display: flex;
         background-color: orange;
         width: 0;
@@ -78,13 +90,15 @@ article{
         align-items: center;
         border-radius: 2px;
         position: absolute;
-        
+
     }
-    .botaoslide.avancar{
+
+    .botaoslide.avancar {
         background-color: white;
         right: 1em;
     }
-    .botaoslide.voltar{
+
+    .botaoslide.voltar {
         background-color: #5C483A;
         left: 1em;
         color: white;

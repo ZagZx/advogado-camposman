@@ -94,3 +94,36 @@ article div .card {
 img {
     object-fit: cover;
 }
+
+@media (max-width: 600px) {
+    #merchan {
+        display: flex;
+        flex-flow: column wrap;
+
+        .romerito {
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    article div {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .card {
+            min-width: 350px;
+            width: 350px;
+            margin: 0 0 4em;
+
+
+            p {
+                width: 280px;
+                font-size: 1.1em;
+            }
+        }
+    }
+}

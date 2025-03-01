@@ -49,12 +49,13 @@
 #accordion12,
 #accordion13,
 #accordion14 {
-  label{
+  label {
     display: block;
     cursor: pointer;
     margin: 0 0.5em;
   }
-  h2{
+
+  h2 {
     display: flex;
   }
 }
@@ -76,4 +77,26 @@
   overflow-y: hidden;
   height: 0;
   transition: height 1s ease;
+}
+
+@media (max-width: 600px) {
+  .perguntas {
+    section {
+      width: 400px;
+
+      h2,
+      label,
+      div {
+        flex-wrap: wrap;
+        width: 400px;
+        height: auto;
+      }
+
+      h2 {
+        max-width: 400px;
+        text-wrap: wrap;
+        white-space: wrap;
+      }
+    }
+  }
 }

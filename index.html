@@ -5,15 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romero Advogado</title>
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/land.css">
-    <title>Romero Advogado</title>
-    <style>
 
-    </style>
     <script>
-        const depoimento = document.getElementsByClassName("depoimento")
+        function changeSlide()
+        {
+            const depoimentos = document.getElementById('depdiv').children
 
+            
+            for (let i = 0; i < depoimentos.length; i++)
+            {
+                
+                if (depoimentos.item(i).id == 'ativado')
+                {   
+                    depoimentos.item(i).id = 'desativado'
+                    if (i+1 < depoimentos.length)
+                    {
+                        depoimentos.item(i+1).id = 'ativado'
+                    }
+                    else
+                    {
+                        depoimentos.item(0).id = 'ativado'
+                    }
+                }
+
+                // if (depoimento.id == 'ativado'){
+                //     depoimento.id = 'desativado'
+                // }
+            }
+
+        }
+        
     </script>
 </head>
 
@@ -26,8 +51,6 @@
             <a href="pages/perguntas.html">Perguntas Frequentes</a>
             <a href="pages/equipe.html">Equipe</a>
         </div>
-
-
     </header>
 
     <article>
@@ -47,27 +70,37 @@
         <div class="titulo">
             <h2>Depoimentos</h2>
         </div>
-        <div id="depdiv">
-            <div class="botaoslide voltar">&#11164;</div>
-            <div id="depoimento">
-                <img src="images/romero_feliz.jfif" alt="">
-                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quisquam beatae quos officia
-                    modi aperiam aliquid obcaecati rem molestiae nisi placeat nostrum hic, aspernatur, laudantium
-                    voluptatum odit, pariatur ullam? Maiores.</span>
+        <div id="container">
+            <div onclick="changeSlide()" class="botaoslide voltar">&#11164;</div>
+
+            <div id="depdiv">
+
+                <div id="ativado" class="depoimentos">
+                    <img src="images/romero_feliz.jfif" alt="">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quisquam beatae quos officia
+                        modi aperiam aliquid obcaecati rem molestiae nisi placeat nostrum hic, aspernatur, laudantium
+                        voluptatum odit, pariatur ullam? Maiores.</span>
+                </div>
+
+                <div id="desativado" class="depoimentos">
+                    <img src="images/romerito_serio.png" alt="">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quisquam beatae quos officia
+                        modi aperiam aliquid obcaecati rem molestiae nisi placeat nostrum hic, aspernatur, laudantium
+                        voluptatum odit, pariatur ullam? Maiores.</span>
+                </div>
+
+                <div id="desativado" class="depoimentos">
+                    <img src="images/Artaxerxes.jpg" alt="">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quisquam beatae quos officia
+                        modi aperiam aliquid obcaecati rem molestiae nisi placeat nostrum hic, aspernatur, laudantium
+                        voluptatum odit, pariatur ullam? Maiores.</span>
+                </div>
+
             </div>
+            
+
             <div class="botaoslide avancar">&#11166;</div>
         </div>
-        <!--         
-        <h1>Onde me encontrar?</h1>
-        <img src="images/endereco.webp" alt="">
-
-        <h1>Nossa estrutura</h1>
-        <img src="images/escritorio.jpg" alt="">
-
-        <h1>Depoimentos</h1>
-        <img src="images/romerito_serio.png" alt="">
-        <img src="images/romerito_serio.png" alt="">
-        <img src="images/romerito_serio.png" alt=""> -->
     </article>
 
     <footer>

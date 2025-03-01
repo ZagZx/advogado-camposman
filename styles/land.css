@@ -1,3 +1,7 @@
+footer{
+    margin: 0;
+}
+
 article {
     img {
         width: 20rem;
@@ -11,96 +15,111 @@ article {
         width: 800px;
     }
 
-    #imagem {
-        background-image: url('../images/endereco.webp');
-        width: 100%;
-        height: 21em;
-        background-size: cover;
-        background-position-y: 25%;
-        opacity: 70%;
-    }
+    
+}
 
-    .titulo {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        background-color: #F3C363;
-        padding: 1em 0;
-        justify-content: center;
+#imagem {
+    background-image: url('../images/endereco.webp');
+    width: 100%;
+    height: 15em;
+    background-size: cover;
+    background-position-y: 25%;
+    opacity: 70%;
+}
 
-        div {
-            display: flex;
-            flex-direction: row;
-            gap: 1em;
-            justify-content: center;
+.titulo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #F3C363;
+    padding: 1em 0;
+    justify-content: center;
 
-            img {
-                width: 70px;
-            }
-
-        }
-    }
-
-    #localizacao {
-        width: 100%;
-        padding: 1em 0;
-
-        span {
-            max-width: 80%;
-        }
-    }
-
-    #depdiv {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        padding: 3em 0;
-    }
-
-    #depoimento {
+    div {
         display: flex;
         flex-direction: row;
         gap: 1em;
-
-        /* background-color: #5C483A; */
-        padding: 1em;
+        justify-content: center;
 
         img {
-            width: 5em;
-            height: 5em;
-            border-radius: 1em;
-            border: 2px solid #5C483A;
-        }
-
-        span {
-            border-top: 2px solid #5C483A;
-            padding-top: 1em;
-            text-align: justify;
+            width: 70px;
         }
 
     }
+}
 
-    .botaoslide {
-        display: flex;
-        background-color: orange;
-        width: 0;
-        padding: 1em 1.5em;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
-        position: absolute;
+#localizacao {
+    width: 100%;
+    padding: 1em 0;
 
+    span {
+        max-width: 80%;
+    }
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 3em 0;
+}
+
+
+.depoimentos {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    /* background-color: #5C483A; */
+    padding: 1em;
+
+    img {
+        width: 5em;
+        height: 5em;
+        border-radius: 1em;
+        border: 2px solid #5C483A;
     }
 
-    .botaoslide.avancar {
-        background-color: white;
-        right: 1em;
+    span {
+        border-top: 2px solid #5C483A;
+        padding-top: 1em;
+        text-align: justify;
     }
 
-    .botaoslide.voltar {
-        background-color: #5C483A;
-        left: 1em;
-        color: white;
-    }
+}
+
+
+#desativado{
+    visibility: hidden;
+    height: 0; 
+    padding: 0;
+}
+#ativado{
+    visibility: visible;
+    height: auto;
+}
+
+.botaoslide {
+    display: flex;
+    background-color: orange;
+    width: 0;
+    padding: 1em 1.5em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    position: absolute;
+    
+    
+}
+
+.botaoslide.avancar {
+    background-color: white;
+    right: 1em;
+}
+
+.botaoslide.voltar {
+    background-color: #5C483A;
+    left: 1em;
+    color: white;
 }

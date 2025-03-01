@@ -97,13 +97,6 @@ article {
     align-items: center;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 1em;
-}
-
 header {
     justify-content: space-around;
 }

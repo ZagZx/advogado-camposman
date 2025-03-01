@@ -44,10 +44,14 @@ header a:hover {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     background-color: #F3C363;
     height: 8rem;
     width: 100%;
+    margin-top: 2em;
 }
 
 article {

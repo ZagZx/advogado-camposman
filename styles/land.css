@@ -102,27 +102,27 @@ article {
 }
 
 .botaoslide {
+    cursor: pointer;
     display: flex;
-    background-color: orange;
+    background-color: #5C483A;
+    color: white;
     width: 0;
     padding: 1em 1.5em;
     justify-content: center;
     align-items: center;
     border-radius: 2px;
     position: absolute;
-
-
+    user-select: none;
 }
 
 .botaoslide.avancar {
-    background-color: white;
     right: 1em;
 }
 
 .botaoslide.voltar {
-    background-color: #5C483A;
+    
     left: 1em;
-    color: white;
+    
 }
 
 

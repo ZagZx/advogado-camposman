@@ -11,98 +11,20 @@
     <link rel="stylesheet" type="" href="../styles/perguntas.css">
 
     <style>
-        #pergunta1:hover::after {
-            content: "A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da carga de trabalho do tribunal, mas geralmente leva de meses a anos.";
-        }
-
-        #pergunta2:hover::after {
-            content: "Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.";
-        }
-
-        #pergunta3:hover::after {
-            content: "Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.";
-        }
-
-        #pergunta4:hover::after {
-            content: "Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas sobre o seu caso.";
-        }
-
-        #pergunta5:hover::after {
-            content: "Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais informações.";
-        }
-
-        #pergunta6:hover::after {
-            content: "O escritório atua nas áreas de direito trabalhista, civil, empresarial, entre outras.";
-        }
-
-        #pergunta7:hover::after {
-            content: "Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver seu caso de maneira mais eficiente.";
-        }
-
-        #pergunta8:hover::after {
-            content: "Você pode verificar a formação do advogado, suas especializações e histórico de casos similares ao seu.";
-        }
-
-        #pergunta9:hover::after {
-            content: "O escritório Sousa & Alves Advogados foca em resultados eficazes, com uma abordagem personalizada e dedicada para cada cliente, buscando sempre a melhor solução para os seus problemas jurídicos.";
-        }
-
-        #pergunta10:hover::after {
-            content: "A escolha entre um advogado individual ou um escritório depende do tipo de caso. Escritórios oferecem uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um atendimento mais próximo e personalizado.";
-        }
-
-        #pergunta11:hover::after {
-            content: "O escritório Sousa & Alves Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo soluções adaptadas para as necessidades de cada cliente.";
-        }
-
-        #pergunta12:hover::after {
-            content: "O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos tipos de serviços jurídicos.";
-        }
-
-        #pergunta13:hover::after {
-            content: "Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente pelo formulário de contato no site oficial.";
-        }
-
-        #pergunta14:hover::after {
-            content: "As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com o tipo de serviço que você precisa.";
-        }
-
-
-
-        .accordion>input[type="checkbox"] {
-            position: absolute;
-            left: -100vw;
-        }
-
-        .accordion h2 {
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 0.5em;
-        }
-
-        .accordion .content {
-            overflow-y: hidden;
-            height: 0;
-            transition: height 1s ease;
-        }
-
-        .accordion>input[type="checkbox"]:checked~.content {
-            height: auto;
-            overflow: visible;
-        }
-
-        .accordion label {
-            display: block;
-            cursor: pointer;
-        }
-
         .perguntas {
             display: flex;
             flex-flow: column nowrap;
             gap: 0.7em;
             align-items: center;
-        }
-        .perguntas {
+
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1em;
+                background-color: #CF6123;
+                border-radius: 1em;
+            }
 
             section img {
                 background-color: #CF6123;
@@ -115,46 +37,27 @@
                 border-radius: 1em;
             }
 
-            section {
-                max-width: 100em;
-
-                div {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
+            section h2 {
+                margin-left: 0.5em;
+                flex-grow: 1;
+                white-space: nowrap;
             }
-        }
 
-        .perguntas {
-            section {
+            section p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 95%;
+                justify-self: center;
                 font-size: 1em;
-                background-color: #CF6123;
-                border-radius: 1em;
-
-                h2 {
-                    padding: 0 0 0 0.5em;
-                }
-
-                label {
-                    padding: 0 0.5em 0 0;
-                }
-
+                color: black;
+                font-weight: bolder;
+                text-align: justify;
             }
-
             
         }
-        div p {
-            max-width: 30em;
-            font-size: 1em;
-            color: black;
-            font-weight: bolder;
-            padding: 0.5em;
-            text-align: justify;
-        }
-        section div p{
-            max-width:var();
-        }
+
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -186,7 +89,23 @@
                 seta.innerHTML = "⮞"
             }
         }
+        function respostaWidth()
+        {
+            const sections = document.getElementsByTagName('section')
+            for (let section of sections)
+            {
+                let pergunta = section.getElementsByTagName('h2').item(0)
+                let resposta = section.getElementsByTagName('p').item(0)
+
+                resposta.style.maxWidth = pergunta.offsetWidth+'px'
+            }
+        }
+
+        window.addEventListener('load', RespostaWidth)
+
+        window.addEventListener('resize', RespostaWidth)
     </script>
+
 </head>
 
 <body>
@@ -204,26 +123,24 @@
     </div>
 
     <div class="perguntas">
-        <section id="accordion1" style="width: auto; padding: 0;">
+        <section id="accordion1">
             <input type="checkbox" name="collapse" value="" id="handle1">
             <h2 id="handle1">Quanto tempo demora a tramitação de um processo na justiça?
                 <label id="label1" onclick="trocaSeta(this.id)" for="handle1">&#11166;</label>
             </h2>
-            <div id="content1">
-                <p>A tramitação de um processo na justiça pode variar dependendo da
-                    complexidade do caso e da carga de
-                    trabalho do tribunal, mas geralmente leva de meses a anos.</p>
-            </div>
+            
+            <p id="content1">A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
+            
         </section>
+
         <section id="accordion2">
             <input type="checkbox" name="collapse" value="" id="handle2">
             <h2 id="handle2">Eu posso contratar o escritório Camposman Advogados pela internet?
                 <label id="label2" onclick="trocaSeta(this.id)" for="handle2">&#11166;</label>
             </h2>
-            <div id="content2">
-                <p>Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.
-                </p>
-            </div>
+
+            <p id="content2">Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.</p>
+            
         </section>
 
         <section id="accordion3">
@@ -232,9 +149,9 @@
                 Obrigatoriamente, o atendimento com o advogado deve ser presencial?
                 <label id="label3" onclick="trocaSeta(this.id)" for="handle3">&#11166;</label>
             </h2>
-            <div id="content3">
-                <p>Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.</p>
-            </div>
+
+            <p id="content3">Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.</p>
+        
         </section>
 
         <section id="accordion4">
@@ -243,10 +160,8 @@
                 Eu posso entrar em contato com o escritório para tirar algumas dúvidas sobre o meu caso?
                 <label id="label4" onclick="trocaSeta(this.seta)" for="handle4">&#11166;</label>
             </h2>
-            <div id="content4">
-                <p>Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas sobre o
-                    seu caso.</p>
-            </div>
+
+            <p id="content4">Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas sobre o seu caso.</p>
         </section>
 
         <section id="accordion5">
@@ -255,10 +170,8 @@
                 Como obter mais informações sobre o meu caso antes de contratar um advogado?
                 <label id="label5" for="handle5">&#11166;<label>
             </h2>
-            <div id="content5">
-                <p>Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais
-                    informações.</p>
-            </div>
+
+            <p id="content5">Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais informações.</p>
         </section>
 
 
@@ -267,9 +180,8 @@
             <h2 id="handle6">Em que áreas o escritório Camposman Advogados atua?
                 <label id="label6" onclick="trocaSeta(this.id)" for="handle6">&#11166;</label>
             </h2>
-            <div id="content6">
-                <p>O escritório atua nas áreas de direito trabalhista, civil, empresarial, entre outras.</p>
-            </div>
+
+            <p id="content6">O escritório atua nas áreas de direito trabalhista, civil, empresarial, entre outras.</p>
         </section>
 
         <section id="accordion7">
@@ -277,10 +189,8 @@
             <h2 id="handle7">Por que é importante procurar um advogado especialista na minha área de interesse?
                 <label id="label7" onclick="trocaSeta(this.id)" for="handle7">&#11166;</label>
             </h2>
-            <div id="content7">
-                <p>Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver seu caso de
-                    maneira mais eficiente.</p>
-            </div>
+            
+            <p id="content7">Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver seu caso de maneira mais eficiente.</p>
         </section>
 
         <section id="accordion8">
@@ -289,10 +199,8 @@
                 causa?
                 <label id="label8" onclick="trocaSeta(this.id)" for="handle8">&#11166;</label>
             </h2>
-            <div id="content8">
-                <p>Você pode verificar a formação do advogado, suas especializações e histórico de casos similares ao
-                    seu.</p>
-            </div>
+            
+            <p id="content8">Você pode verificar a formação do advogado, suas especializações e histórico de casos similares ao seu.</p>
         </section>
 
         <section id="accordion9">
@@ -300,11 +208,10 @@
             <h2 id="handle9"> O que posso esperar do escritório Camposman Advogados?
                 <label id="label9" onclick="trocaSeta(this.id)" for="handle9">&#11166;</label>
             </h2>
-            <div id="content9">
-                <p>O escritório Camposman Advogados foca em resultados eficazes, com uma
-                    abordagem personalizada e
-                    dedicada para cada cliente, buscando sempre a melhor solução para os seus problemas jurídicos.</p>
-            </div>
+
+            <p id="content9">O escritório Camposman Advogados foca em resultados eficazes, com uma
+                abordagem personalizada e
+                dedicada para cada cliente, buscando sempre a melhor solução para os seus problemas jurídicos.</p>
         </section>
 
         <section id="accordion10">
@@ -312,11 +219,10 @@
             <h2 id="handle10">É melhor contratar um advogado que atua sozinho ou um escritório?
                 <label id="label10" onclick="trocaSeta(this.id)" for="handle10">&#11166;</label>
             </h2>
-            <div id="content10">
-                <p>A escolha entre um advogado individual ou um escritório depende do tipo de caso. Escritórios oferecem
-                    uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um
-                    atendimento mais próximo e personalizado.</p>
-            </div>
+
+            <p id="content10">A escolha entre um advogado individual ou um escritório depende do tipo de caso. Escritórios oferecem
+                uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um
+                atendimento mais próximo e personalizado.</p>
         </section>
 
         <section id="accordion11">
@@ -324,10 +230,8 @@
             <h2 id="handle11">O Camposman Advogados atende somente pessoas físicas?
                 <label id="label11" onclick="trocaSeta(this.id)" for="handle11">&#11166;</label>
             </h2>
-            <div id="content11">
-                <p>O escritório Camposman Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo soluções
-                    adaptadas para as necessidades de cada cliente.</p>
-            </div>
+
+            <p id="content11">O escritório Camposman Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo soluções adaptadas para as necessidades de cada cliente.</p>
         </section>
 
         <section id="accordion12">
@@ -335,10 +239,8 @@
             <h2 id="handle12">O Escritório Camposman tem somente atendimento local ou atende nacionalmente?
                 <label id="label12" onclick="trocaSeta(this.id)" for="handle12">&#11166;</label>
             </h2>
-            <div id="content12">
-                <p>O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos tipos de
-                    serviços jurídicos.</p>
-            </div>
+
+            <p id="content12">O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos tipos de serviços jurídicos.</p>
         </section>
 
         <section id="accordion13">
@@ -346,10 +248,8 @@
             <h2 id="handle13">Como contatar o Escritório Camposman Advogados?
                 <label id="label13" onclick="trocaSeta(this.id)" for="handle13">&#11166;</label>
             </h2>
-            <div id="content13">
-                <p>Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente pelo
-                    formulário de contato no site oficial.</p>
-            </div>
+
+            <p id="content13">Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente pelo formulário de contato no site oficial.</p>
         </section>
 
         <section id="accordion14">
@@ -357,10 +257,8 @@
             <h2 id="handle14">Quais as condições de pagamento?
                 <label id="label14" onclick="trocaSeta(this.id)" for="handle14">&#11166;</label>
             </h2>
-            <div id="content14">
-                <p>As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com o tipo de
-                    serviço que você precisa.</p>
-            </div>
+
+            <p id="content14">As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com o tipo de serviço que você precisa.</p>
         </section>
 
 

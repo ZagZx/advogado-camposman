@@ -16,44 +16,6 @@
   left: -100vw;
 }
 
-#accordion1 h2,
-#accordion2 h2,
-#accordion3 h2,
-#accordion4 h2,
-#accordion5 h2,
-#accordion6 h2,
-#accordion7 h2,
-#accordion8 h2,
-#accordion9 h2,
-#accordion10 h2,
-#accordion11 h2,
-#accordion12 h2,
-#accordion13 h2,
-#accordion14 h2 {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 0.5em;
-}
-
-#content1,
-#content2,
-#content3,
-#content4,
-#content5,
-#content6,
-#content7,
-#content8,
-#content9,
-#content10,
-#content11,
-#content12,
-#content13,
-#content14 {
-  overflow-y: hidden;
-  height: 0;
-  transition: height 1s ease;
-}
-
 #accordion1>input[type="checkbox"]:checked~#content1,
 #accordion2>input[type="checkbox"]:checked~#content2,
 #accordion3>input[type="checkbox"]:checked~#content3,
@@ -73,28 +35,45 @@
   border-top: 0.2em solid black;
 }
 
-#accordion1 label,
-#accordion2 label,
-#accordion3 label,
-#accordion4 label,
-#accordion5 label,
-#accordion6 label,
-#accordion7 label,
-#accordion8 label,
-#accordion9 label,
-#accordion10 label,
-#accordion11 label,
-#accordion12 label,
-#accordion13 label,
-#accordion14 label {
-  display: block;
-  cursor: pointer;
+#accordion1,
+#accordion2,
+#accordion3,
+#accordion4,
+#accordion5,
+#accordion6,
+#accordion7,
+#accordion8,
+#accordion9,
+#accordion10,
+#accordion11,
+#accordion12,
+#accordion13,
+#accordion14 {
+  label{
+    display: block;
+    cursor: pointer;
+    margin: 0 0.5em;
+  }
+  h2{
+    display: flex;
+  }
 }
 
-header {
-  z-index: 1;
-}
-
-body div {
-  z-index: 0;
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6,
+#content7,
+#content8,
+#content9,
+#content10,
+#content11,
+#content12,
+#content13,
+#content14 {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 1s ease;
 }

@@ -18,14 +18,14 @@ article {
     
 }
 
-    #imagem {
-        background-image: url('../images/endereco1.webp');
-        width: 100%;
-        height: 21em;
-        background-size: cover;
-        background-position-y: 25%;
-        opacity: 70%;
-    }
+#imagem {
+    background-image: url('../images/endereco1.webp');
+    width: 100%;
+    height: 15em;
+    background-size: cover;
+    background-position-y: 25%;
+    opacity: 70%;
+}
 
 .titulo {
     display: flex;

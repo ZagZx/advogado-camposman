@@ -1,4 +1,4 @@
-footer{
+footer {
     margin: 0;
 }
 
@@ -15,7 +15,7 @@ article {
         width: 800px;
     }
 
-    
+
 }
 
 #imagem {
@@ -90,12 +90,13 @@ article {
 }
 
 
-#desativado{
+#desativado {
     visibility: hidden;
-    height: 0; 
+    height: 0;
     padding: 0;
 }
-#ativado{
+
+#ativado {
     visibility: visible;
     height: auto;
 }
@@ -109,8 +110,8 @@ article {
     align-items: center;
     border-radius: 2px;
     position: absolute;
-    
-    
+
+
 }
 
 .botaoslide.avancar {
@@ -118,12 +119,12 @@ article {
     right: 1em;
 }
 
-    .botaoslide.voltar {
-        background-color: #5C483A;
-        left: 1em;
-        color: white;
-    }
+.botaoslide.voltar {
+    background-color: #5C483A;
+    left: 1em;
+    color: white;
 }
+
 
 @media (max-width: 600px) {
     * {
@@ -150,8 +151,12 @@ article {
 
     }
 
-    #depoimento {
+    #depdiv {
         max-width: 18em;
+
+        div {
+            max-width: 18em;
+        }
     }
 
     footer {

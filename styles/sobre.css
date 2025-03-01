@@ -20,8 +20,8 @@ article div {
 
 .romerito img {
 
-    max-height: 200px;
-    width: max-content;
+    height: 300px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     border-radius: 80.5%;
@@ -89,4 +89,8 @@ article div .card {
     max-height: 20em;
     font-size: 1.3em;
     color: #FFFFFF;
+}
+
+img {
+    object-fit: cover;
 }

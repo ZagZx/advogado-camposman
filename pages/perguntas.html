@@ -43,7 +43,7 @@
                 white-space: nowrap;
             }
 
-            section p{
+            section p {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -54,10 +54,10 @@
                 font-weight: bolder;
                 text-align: justify;
             }
-            
+
         }
 
-        
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -70,12 +70,11 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .container h2, h1 {
+        .container h2,
+        h1 {
             text-align: center;
             margin: 2rem 0;
         }
-        
-
     </style>
 
     <script>
@@ -89,15 +88,13 @@
                 seta.innerHTML = "⮞"
             }
         }
-        function respostaWidth()
-        {
+        function respostaWidth() {
             const sections = document.getElementsByTagName('section')
-            for (let section of sections)
-            {
+            for (let section of sections) {
                 let pergunta = section.getElementsByTagName('h2').item(0)
                 let resposta = section.getElementsByTagName('p').item(0)
 
-                resposta.style.maxWidth = pergunta.offsetWidth+'px'
+                resposta.style.maxWidth = pergunta.offsetWidth + 'px'
             }
         }
 
@@ -115,6 +112,7 @@
         <div>
             <a href="sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
+            <a href="equipe.html">Equipe</a>
         </div>
     </header>
 
@@ -128,9 +126,10 @@
             <h2 id="handle1">Quanto tempo demora a tramitação de um processo na justiça?
                 <label id="label1" onclick="trocaSeta(this.id)" for="handle1">&#11166;</label>
             </h2>
-            
-            <p id="content1">A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
-            
+
+            <p id="content1">A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da
+                carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
+
         </section>
 
         <section id="accordion2">
@@ -139,8 +138,9 @@
                 <label id="label2" onclick="trocaSeta(this.id)" for="handle2">&#11166;</label>
             </h2>
 
-            <p id="content2">Sim, o escritório oferece consultas e contratação online de seus serviços através do site oficial.</p>
-            
+            <p id="content2">Sim, o escritório oferece consultas e contratação online de seus serviços através do site
+                oficial.</p>
+
         </section>
 
         <section id="accordion3">
@@ -150,8 +150,9 @@
                 <label id="label3" onclick="trocaSeta(this.id)" for="handle3">&#11166;</label>
             </h2>
 
-            <p id="content3">Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.</p>
-        
+            <p id="content3">Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.
+            </p>
+
         </section>
 
         <section id="accordion4">
@@ -161,7 +162,8 @@
                 <label id="label4" onclick="trocaSeta(this.seta)" for="handle4">&#11166;</label>
             </h2>
 
-            <p id="content4">Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas sobre o seu caso.</p>
+            <p id="content4">Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas
+                sobre o seu caso.</p>
         </section>
 
         <section id="accordion5">
@@ -171,7 +173,8 @@
                 <label id="label5" for="handle5">&#11166;<label>
             </h2>
 
-            <p id="content5">Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais informações.</p>
+            <p id="content5">Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais
+                informações.</p>
         </section>
 
 
@@ -189,8 +192,9 @@
             <h2 id="handle7">Por que é importante procurar um advogado especialista na minha área de interesse?
                 <label id="label7" onclick="trocaSeta(this.id)" for="handle7">&#11166;</label>
             </h2>
-            
-            <p id="content7">Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver seu caso de maneira mais eficiente.</p>
+
+            <p id="content7">Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver
+                seu caso de maneira mais eficiente.</p>
         </section>
 
         <section id="accordion8">
@@ -199,8 +203,9 @@
                 causa?
                 <label id="label8" onclick="trocaSeta(this.id)" for="handle8">&#11166;</label>
             </h2>
-            
-            <p id="content8">Você pode verificar a formação do advogado, suas especializações e histórico de casos similares ao seu.</p>
+
+            <p id="content8">Você pode verificar a formação do advogado, suas especializações e histórico de casos
+                similares ao seu.</p>
         </section>
 
         <section id="accordion9">
@@ -220,7 +225,8 @@
                 <label id="label10" onclick="trocaSeta(this.id)" for="handle10">&#11166;</label>
             </h2>
 
-            <p id="content10">A escolha entre um advogado individual ou um escritório depende do tipo de caso. Escritórios oferecem
+            <p id="content10">A escolha entre um advogado individual ou um escritório depende do tipo de caso.
+                Escritórios oferecem
                 uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um
                 atendimento mais próximo e personalizado.</p>
         </section>
@@ -231,7 +237,8 @@
                 <label id="label11" onclick="trocaSeta(this.id)" for="handle11">&#11166;</label>
             </h2>
 
-            <p id="content11">O escritório Camposman Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo soluções adaptadas para as necessidades de cada cliente.</p>
+            <p id="content11">O escritório Camposman Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo
+                soluções adaptadas para as necessidades de cada cliente.</p>
         </section>
 
         <section id="accordion12">
@@ -240,7 +247,8 @@
                 <label id="label12" onclick="trocaSeta(this.id)" for="handle12">&#11166;</label>
             </h2>
 
-            <p id="content12">O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos tipos de serviços jurídicos.</p>
+            <p id="content12">O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos
+                tipos de serviços jurídicos.</p>
         </section>
 
         <section id="accordion13">
@@ -249,7 +257,8 @@
                 <label id="label13" onclick="trocaSeta(this.id)" for="handle13">&#11166;</label>
             </h2>
 
-            <p id="content13">Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente pelo formulário de contato no site oficial.</p>
+            <p id="content13">Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente
+                pelo formulário de contato no site oficial.</p>
         </section>
 
         <section id="accordion14">
@@ -258,7 +267,8 @@
                 <label id="label14" onclick="trocaSeta(this.id)" for="handle14">&#11166;</label>
             </h2>
 
-            <p id="content14">As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com o tipo de serviço que você precisa.</p>
+            <p id="content14">As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com
+                o tipo de serviço que você precisa.</p>
         </section>
 
 

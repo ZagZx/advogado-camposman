@@ -56,3 +56,36 @@ body {
 h1 {
   margin: 2em 0 2em;
 }
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 400px;
+    flex-flow: column wrap;
+  }
+
+  .card div {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 180px;
+      height: 180px;
+    }
+
+    p {
+      padding-top: 1em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .card div:last-child {
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+
+}

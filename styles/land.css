@@ -18,14 +18,14 @@ article {
     
 }
 
-#imagem {
-    background-image: url('../images/endereco.webp');
-    width: 100%;
-    height: 15em;
-    background-size: cover;
-    background-position-y: 25%;
-    opacity: 70%;
-}
+    #imagem {
+        background-image: url('../images/endereco1.webp');
+        width: 100%;
+        height: 21em;
+        background-size: cover;
+        background-position-y: 25%;
+        opacity: 70%;
+    }
 
 .titulo {
     display: flex;
@@ -118,8 +118,53 @@ article {
     right: 1em;
 }
 
-.botaoslide.voltar {
-    background-color: #5C483A;
-    left: 1em;
-    color: white;
+    .botaoslide.voltar {
+        background-color: #5C483A;
+        left: 1em;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        max-width: 600px;
+    }
+
+    #logoa,
+    #logo {
+        width: 100px;
+        height: 100px;
+        margin: 1.5em 0 0;
+        left: 0;
+        top: 0;
+    }
+
+    header div {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2em;
+    }
+
+    header a {
+        font-size: 0.8em;
+
+    }
+
+    #depoimento {
+        max-width: 18em;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+
+        span {
+            display: inline;
+            margin: 0 0 0 2em;
+        }
+    }
+
+    .titulo div {
+        margin: 0 0 0 1em;
+    }
 }

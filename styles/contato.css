@@ -100,3 +100,24 @@ article {
 header {
     justify-content: space-around;
 }
+
+@media (max-width: 600px) {
+    article div {
+        width: 400px;
+    }
+
+    #buttons {
+        .info {
+            font-size: 1em;
+        }
+
+    }
+
+    #email:hover::after {
+        left: 1.2em;
+    }
+
+    #numero:hover::after {
+        right: 11.7em;
+    }
+}

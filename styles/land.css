@@ -152,10 +152,9 @@ article {
     }
 
     #depdiv {
-        max-width: 18em;
-
         div {
-            max-width: 18em;
+            flex-direction: column;
+            max-width: 40%;
         }
     }
 

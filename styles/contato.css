@@ -110,8 +110,5 @@ header {
     #email:hover::after {
         left: 1.2em;
     }
-
-    #numero:hover::after {
-        right: 11.7em;
-    }
+    
 }

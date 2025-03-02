@@ -35,6 +35,7 @@
 .romerito p {
     font-size: x-large;
     margin-top: 30px;
+    font-weight: bold;
 }
 
 #frase {
@@ -105,15 +106,23 @@ img {
     #merchan {
         display: flex;
         flex-flow: column wrap;
-
+        gap: 1em;
         .romerito {
-
             img {
                 width: 150px;
                 height: 150px;
                 object-fit: cover;
             }
         }
+    }
+    #cardscontainer{
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .card p{
+        overflow: auto;
+        max-height: none;
     }
 
     article div {

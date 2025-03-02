@@ -153,6 +153,7 @@ article {
     }
 
     #depdiv {
+        max-width: 100vw;
         div {
             flex-direction: column;
             max-width: 40%;

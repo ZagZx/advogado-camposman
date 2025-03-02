@@ -20,7 +20,12 @@
 
   header a {
     font-size: 0.8em;
+    height: 2em;
+    display: flex;
+    align-items: center;
 
   }
-
+  footer span{
+    margin: 0 0 0 2em;
+  }
 }

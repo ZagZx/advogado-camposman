@@ -1,24 +1,33 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+header{
+    margin-bottom: 2em;
+}
 article {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
     align-items: center;
-    border-radius: 10px;
+    gap: 5em;
     background-color: #F1E9BB;
 }
 
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cartao{
+    width: 20em;
+}
+
 .info {
-    flex-shrink: 0;
-    flex-grow: 0;
-    width: 6em;
+    padding: 0 0.5em;
     height: 2em;
     background-color: #CF6123;
     border-radius: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -27,74 +36,53 @@ article {
 
 #buttons {
     display: flex;
-    flex-flow: row nowrap;
+    position: relative;
     justify-content: space-around;
     align-items: center;
     gap: 2em;
 }
 
-#instagram {
-    width: 8em;
-}
+
 
 #email::before {
     content: url(../images/envelope-at-fill.svg);
-    margin-right: 0.6em;
     object-fit: contain;
 }
 
 #instagram::before {
     content: url(../images/instagram.svg);
-    margin-right: 0.3em;
     object-fit: contain;
 }
 
 #numero::before {
     content: url(../images/telephone-fill.svg);
-    margin-right: 0.4em;
     object-fit: contain;
 }
 
-#numero:hover::after {
-    content: "4002-8922";
-    height: 2em;
+.info:hover::after{
+    white-space: nowrap;
     width: auto;
+    height: 1.2em;
+    padding: 0 0.5em;
     background-color: #CF6123;
     position: absolute;
     align-self: center;
     border-radius: 10px;
-    top: 22em;
+    bottom: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#numero:hover::after {
+    content: "4002-8922";
+}
 
 #email:hover::after {
-    content: "romerito.camposman@camposmanagencia.com.br";
-    height: 2em;
-    width: auto;
-    background-color: #CF6123;
-    position: absolute;
-    align-self: center;
-    border-radius: 10px;
-    top: 22em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    content: "romerito.camposman@agencia.com";
 }
 
 #instagram:hover::after {
     content: "@camposmanagencia";
-    height: 2em;
-    width: auto;
-    background-color: #CF6123;
-    position: absolute;
-    align-self: center;
-    border-radius: 10px;
-    top: 22em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header {
@@ -102,8 +90,14 @@ header {
 }
 
 @media (max-width: 600px) {
+    article{
+        gap: 3em;
+    }
     article div {
-        width: 400px;
+        max-width: 90%;
+    }
+    #contato h2{
+        text-align: center;
     }
 
     #buttons {

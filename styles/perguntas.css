@@ -81,19 +81,19 @@
 
 @media (max-width: 600px) {
   .perguntas {
+    width: 100%;
     section {
-      max-width: 400px;
+      max-width: 95%;
 
       h2,
       label,
       div {
         flex-wrap: wrap;
-        width: 400px;
+        max-width: 100%;
         height: auto;
       }
 
       h2 {
-        max-width: 400px;
         text-wrap: wrap;
         white-space: wrap;
       }

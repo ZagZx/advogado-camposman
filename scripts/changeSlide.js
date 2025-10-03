@@ -1,34 +1,16 @@
-function changeSlide(soma) {
-    const depoimentos = document.getElementById('depdiv').children;
+function changeSlide(element) {
+    const first = document.getElementById("depdiv").firstElementChild;
+    const active = document.getElementById("ativado");
+    const last = document.getElementById("depdiv").lastElementChild;
 
-    for (let i = 0; i < depoimentos.length; i++) {
-        if (depoimentos.item(i).id == 'ativado') {   
-            depoimentos.item(i).id = 'desativado';
-
-            if (soma === 1)
-            {
-                if (i+soma < depoimentos.length)
-                {
-                    depoimentos.item(i+soma).id = 'ativado';
-                }
-                else
-                {
-                    depoimentos.item(0).id = 'ativado';
-                }
-            
-            }
-            else if (soma === -1)
-            {
-                if (i+soma < 0)
-                {
-                    depoimentos.item(i+depoimentos.length-1).id = 'ativado';
-                }
-                else
-                {
-                    depoimentos.item(i+soma).id = 'ativado';
-                }
-            }
-            break;
-        }
+    let nextActive;
+    if (element.classList.contains("avancar")) {
+        nextActive = active.nextElementSibling || first;
     }
+    else if (element.classList.contains("voltar")) {
+        nextActive = active.previousElementSibling || last;
+    } 
+
+    nextActive.id = "ativado";
+    active.id = "";
 }

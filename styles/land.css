@@ -2,7 +2,7 @@ footer {
     margin: 0;
 }
 
-article {
+main {
     img {
         width: 20rem;
     }
@@ -14,8 +14,6 @@ article {
         align-items: center;
         width: 800px;
     }
-
-
 }
 
 #imagem {
@@ -65,9 +63,8 @@ article {
     padding: 3em 0;
 }
 
-
 .depoimentos {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 1em;
 
@@ -89,17 +86,8 @@ article {
 
 }
 
-
-#desativado {
-    visibility: hidden;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 #ativado {
-    visibility: visible;
-    height: auto;
+    display: flex;
 }
 
 .botaoslide {

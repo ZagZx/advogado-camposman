@@ -4,7 +4,7 @@
 header{
     margin-bottom: 2em;
 }
-article {
+main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -85,15 +85,11 @@ article {
     content: "@camposmanagencia";
 }
 
-header {
-    justify-content: space-around;
-}
-
 @media (max-width: 600px) {
-    article{
+    main{
         gap: 3em;
     }
-    article div {
+    main div {
         max-width: 90%;
     }
     #contato h2{

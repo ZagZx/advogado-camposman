@@ -10,272 +10,192 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" type="" href="../styles/perguntas.css">
 
-    <style>
-        .perguntas {
-            display: flex;
-            flex-flow: column nowrap;
-            gap: 0.7em;
-            align-items: center;
-
-            section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                font-size: 1em;
-                background-color: #CF6123;
-                border-radius: 1em;
-            }
-
-            section img {
-                background-color: #CF6123;
-                border-radius: 1em;
-            }
-
-            section h2,
-            label {
-                background-color: #CF6123;
-                border-radius: 1em;
-            }
-
-            section h2 {
-                margin-left: 0.5em;
-                flex-grow: 1;
-            }
-
-            section p {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 95%;
-                justify-self: center;
-                font-size: 1em;
-                color: black;
-                font-weight: bolder;
-                text-align: justify;
-            }
-
-        }
-
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            align-content: center;
-        }
-
-        .container {
-            align-content: center;
-            align-items: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .container h2,
-        h1 {
-            text-align: center;
-            margin: 2rem 0;
-        }
-    </style>
-
+    <script src="../scripts/perguntas.js"></script>
     <script>
-        function trocaSeta(id) {
-            const seta = document.getElementById(id)
-            console.log(seta.innerHTML)
-            if (seta.innerHTML === "⮞") {
-                seta.innerHTML = "⮟"
-            }
-            else {
-                seta.innerHTML = "⮞"
-            }
-        }
-        function respostaWidth() {
-            const sections = document.getElementsByTagName('section')
-            for (let section of sections) {
-                let pergunta = section.getElementsByTagName('h2').item(0)
-                let resposta = section.getElementsByTagName('p').item(0)
-
-                resposta.style.maxWidth = pergunta.offsetWidth + 'px'
-            }
-        }
-
         window.addEventListener('load', respostaWidth)
-
         window.addEventListener('resize', respostaWidth)
     </script>
     <link rel="stylesheet" href="../styles/mainmedia.css">
-
 </head>
 
 <body>
-
     <header>
-        <a id="logoa" href="../index.html"><img id="logo" src="../images/Camposman Agencia.png" alt="logo"> </a>
-        <div>
-            <a href="sobre.html">Sobre</a>
-            <a href="contato.html">Contato</a>
-            <a href="equipe.html">Equipe</a>
-        </div>
+        <nav>
+            <div>
+                <a id="logoa" href="../index.html">
+                    <img id="logo" src="../images/Camposman Agencia.png" alt="">
+                </a>
+            </div>
+            
+            <div>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./contato.html">Contato</a>
+                <a href="./equipe.html">Equipe</a>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>Perguntas frequentes</h2>
-    </div>
+    <main>
+        <div class="container">
+            <h2>Perguntas frequentes</h2>
+        </div>
 
-    <div class="perguntas">
-        <section id="accordion1">
-            <input type="checkbox" name="collapse" value="" id="handle1">
-            <h2 id="handle1">Quanto tempo demora a tramitação de um processo na justiça?
-                <label id="label1" onclick="trocaSeta(this.id)" for="handle1">&#11166;</label>
-            </h2>
+        <div class="perguntas">
+            <section id="accordion1">
+                <input type="checkbox" name="collapse" value="" id="handle1">
+                <h2 id="handle1">Quanto tempo demora a tramitação de um processo na justiça?
+                    <label id="label1" onclick="trocaSeta(this.id)" for="handle1">&#11166;</label>
+                </h2>
 
-            <p id="content1">A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da
-                carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
+                <p id="content1">A tramitação de um processo na justiça pode variar dependendo da complexidade do caso e da
+                    carga de trabalho do tribunal, mas geralmente leva de meses a anos.</p>
 
-        </section>
+            </section>
 
-        <section id="accordion2">
-            <input type="checkbox" name="collapse" value="" id="handle2">
-            <h2 id="handle2">Eu posso contratar o escritório Camposman Advogados pela internet?
-                <label id="label2" onclick="trocaSeta(this.id)" for="handle2">&#11166;</label>
-            </h2>
+            <section id="accordion2">
+                <input type="checkbox" name="collapse" value="" id="handle2">
+                <h2 id="handle2">Eu posso contratar o escritório Camposman Advogados pela internet?
+                    <label id="label2" onclick="trocaSeta(this.id)" for="handle2">&#11166;</label>
+                </h2>
 
-            <p id="content2">Sim, o escritório oferece consultas e contratação online de seus serviços através do site
-                oficial.</p>
+                <p id="content2">Sim, o escritório oferece consultas e contratação online de seus serviços através do site
+                    oficial.</p>
 
-        </section>
+            </section>
 
-        <section id="accordion3">
-            <input type="checkbox" name="collapse" value="" id="handle3">
-            <h2 id="handle3">
-                Obrigatoriamente, o atendimento com o advogado deve ser presencial?
-                <label id="label3" onclick="trocaSeta(this.id)" for="handle3">&#11166;</label>
-            </h2>
+            <section id="accordion3">
+                <input type="checkbox" name="collapse" value="" id="handle3">
+                <h2 id="handle3">
+                    Obrigatoriamente, o atendimento com o advogado deve ser presencial?
+                    <label id="label3" onclick="trocaSeta(this.id)" for="handle3">&#11166;</label>
+                </h2>
 
-            <p id="content3">Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.
-            </p>
+                <p id="content3">Não, é possível fazer atendimentos por videoconferência ou telefone, dependendo do caso.
+                </p>
 
-        </section>
+            </section>
 
-        <section id="accordion4">
-            <input type="checkbox" name="collapse" value="" id="handle4">
-            <h2 id="handle4">
-                Eu posso entrar em contato com o escritório para tirar algumas dúvidas sobre o meu caso?
-                <label id="label4" onclick="trocaSeta(this.seta)" for="handle4">&#11166;</label>
-            </h2>
+            <section id="accordion4">
+                <input type="checkbox" name="collapse" value="" id="handle4">
+                <h2 id="handle4">
+                    Eu posso entrar em contato com o escritório para tirar algumas dúvidas sobre o meu caso?
+                    <label id="label4" onclick="trocaSeta(this.seta)" for="handle4">&#11166;</label>
+                </h2>
 
-            <p id="content4">Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas
-                sobre o seu caso.</p>
-        </section>
+                <p id="content4">Sim, o escritório oferece canais de comunicação como telefone e e-mail para dúvidas rápidas
+                    sobre o seu caso.</p>
+            </section>
 
-        <section id="accordion5">
-            <input type="checkbox" name="collapse" value="" id="handle5">
-            <h2 id="handle5">
-                Como obter mais informações sobre o meu caso antes de contratar um advogado?
-                <label id="label5" for="handle5">&#11166;<label>
-            </h2>
+            <section id="accordion5">
+                <input type="checkbox" name="collapse" value="" id="handle5">
+                <h2 id="handle5">
+                    Como obter mais informações sobre o meu caso antes de contratar um advogado?
+                    <label id="label5" for="handle5">&#11166;<label>
+                </h2>
 
-            <p id="content5">Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais
-                informações.</p>
-        </section>
+                <p id="content5">Você pode agendar uma consulta inicial para discutir os detalhes do seu caso e obter mais
+                    informações.</p>
+            </section>
 
 
-        <section id="accordion6">
-            <input type="checkbox" name="collapse" value="" id="handle6">
-            <h2 id="handle6">Em que áreas o escritório Camposman Advogados atua?
-                <label id="label6" onclick="trocaSeta(this.id)" for="handle6">&#11166;</label>
-            </h2>
+            <section id="accordion6">
+                <input type="checkbox" name="collapse" value="" id="handle6">
+                <h2 id="handle6">Em que áreas o escritório Camposman Advogados atua?
+                    <label id="label6" onclick="trocaSeta(this.id)" for="handle6">&#11166;</label>
+                </h2>
 
-            <p id="content6">O escritório atua nas áreas de direito trabalhista, civil, empresarial, entre outras.</p>
-        </section>
+                <p id="content6">O escritório atua nas áreas de direito trabalhista, civil, empresarial, entre outras.</p>
+            </section>
 
-        <section id="accordion7">
-            <input type="checkbox" name="collapse" value="" id="handle7">
-            <h2 id="handle7">Por que é importante procurar um advogado especialista na minha área de interesse?
-                <label id="label7" onclick="trocaSeta(this.id)" for="handle7">&#11166;</label>
-            </h2>
+            <section id="accordion7">
+                <input type="checkbox" name="collapse" value="" id="handle7">
+                <h2 id="handle7">Por que é importante procurar um advogado especialista na minha área de interesse?
+                    <label id="label7" onclick="trocaSeta(this.id)" for="handle7">&#11166;</label>
+                </h2>
 
-            <p id="content7">Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver
-                seu caso de maneira mais eficiente.</p>
-        </section>
+                <p id="content7">Um advogado especializado pode oferecer um melhor entendimento e estratégia para resolver
+                    seu caso de maneira mais eficiente.</p>
+            </section>
 
-        <section id="accordion8">
-            <input type="checkbox" name="collapse" value="" id="handle8">
-            <h2 id="handle8">Como saber se o advogado é especialista na minha área de interesse para trabalhar na minha
-                causa?
-                <label id="label8" onclick="trocaSeta(this.id)" for="handle8">&#11166;</label>
-            </h2>
+            <section id="accordion8">
+                <input type="checkbox" name="collapse" value="" id="handle8">
+                <h2 id="handle8">Como saber se o advogado é especialista na minha área de interesse para trabalhar na minha
+                    causa?
+                    <label id="label8" onclick="trocaSeta(this.id)" for="handle8">&#11166;</label>
+                </h2>
 
-            <p id="content8">Você pode verificar a formação do advogado, suas especializações e histórico de casos
-                similares ao seu.</p>
-        </section>
+                <p id="content8">Você pode verificar a formação do advogado, suas especializações e histórico de casos
+                    similares ao seu.</p>
+            </section>
 
-        <section id="accordion9">
-            <input type="checkbox" name="collapse" value="" id="handle9">
-            <h2 id="handle9"> O que posso esperar do escritório Camposman Advogados?
-                <label id="label9" onclick="trocaSeta(this.id)" for="handle9">&#11166;</label>
-            </h2>
+            <section id="accordion9">
+                <input type="checkbox" name="collapse" value="" id="handle9">
+                <h2 id="handle9"> O que posso esperar do escritório Camposman Advogados?
+                    <label id="label9" onclick="trocaSeta(this.id)" for="handle9">&#11166;</label>
+                </h2>
 
-            <p id="content9">O escritório Camposman Advogados foca em resultados eficazes, com uma
-                abordagem personalizada e
-                dedicada para cada cliente, buscando sempre a melhor solução para os seus problemas jurídicos.</p>
-        </section>
+                <p id="content9">O escritório Camposman Advogados foca em resultados eficazes, com uma
+                    abordagem personalizada e
+                    dedicada para cada cliente, buscando sempre a melhor solução para os seus problemas jurídicos.</p>
+            </section>
 
-        <section id="accordion10">
-            <input type="checkbox" name="collapse" value="" id="handle10">
-            <h2 id="handle10">É melhor contratar um advogado que atua sozinho ou um escritório?
-                <label id="label10" onclick="trocaSeta(this.id)" for="handle10">&#11166;</label>
-            </h2>
+            <section id="accordion10">
+                <input type="checkbox" name="collapse" value="" id="handle10">
+                <h2 id="handle10">É melhor contratar um advogado que atua sozinho ou um escritório?
+                    <label id="label10" onclick="trocaSeta(this.id)" for="handle10">&#11166;</label>
+                </h2>
 
-            <p id="content10">A escolha entre um advogado individual ou um escritório depende do tipo de caso.
-                Escritórios oferecem
-                uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um
-                atendimento mais próximo e personalizado.</p>
-        </section>
+                <p id="content10">A escolha entre um advogado individual ou um escritório depende do tipo de caso.
+                    Escritórios oferecem
+                    uma equipe diversificada de especialistas, enquanto advogados individuais podem garantir um
+                    atendimento mais próximo e personalizado.</p>
+            </section>
 
-        <section id="accordion11">
-            <input type="checkbox" name="collapse" value="" id="handle11">
-            <h2 id="handle11">O Camposman Advogados atende somente pessoas físicas?
-                <label id="label11" onclick="trocaSeta(this.id)" for="handle11">&#11166;</label>
-            </h2>
+            <section id="accordion11">
+                <input type="checkbox" name="collapse" value="" id="handle11">
+                <h2 id="handle11">O Camposman Advogados atende somente pessoas físicas?
+                    <label id="label11" onclick="trocaSeta(this.id)" for="handle11">&#11166;</label>
+                </h2>
 
-            <p id="content11">O escritório Camposman Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo
-                soluções adaptadas para as necessidades de cada cliente.</p>
-        </section>
+                <p id="content11">O escritório Camposman Advogados atende tanto pessoas físicas quanto jurídicas, oferecendo
+                    soluções adaptadas para as necessidades de cada cliente.</p>
+            </section>
 
-        <section id="accordion12">
-            <input type="checkbox" name="collapse" value="" id="handle12">
-            <h2 id="handle12">O Escritório Camposman tem somente atendimento local ou atende nacionalmente?
-                <label id="label12" onclick="trocaSeta(this.id)" for="handle12">&#11166;</label>
-            </h2>
+            <section id="accordion12">
+                <input type="checkbox" name="collapse" value="" id="handle12">
+                <h2 id="handle12">O Escritório Camposman tem somente atendimento local ou atende nacionalmente?
+                    <label id="label12" onclick="trocaSeta(this.id)" for="handle12">&#11166;</label>
+                </h2>
 
-            <p id="content12">O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos
-                tipos de serviços jurídicos.</p>
-        </section>
+                <p id="content12">O escritório oferece atendimento em todo o Brasil, com cobertura nacional para diversos
+                    tipos de serviços jurídicos.</p>
+            </section>
 
-        <section id="accordion13">
-            <input type="checkbox" name="collapse" value="" id="handle13">
-            <h2 id="handle13">Como contatar o Escritório Camposman Advogados?
-                <label id="label13" onclick="trocaSeta(this.id)" for="handle13">&#11166;</label>
-            </h2>
+            <section id="accordion13">
+                <input type="checkbox" name="collapse" value="" id="handle13">
+                <h2 id="handle13">Como contatar o Escritório Camposman Advogados?
+                    <label id="label13" onclick="trocaSeta(this.id)" for="handle13">&#11166;</label>
+                </h2>
 
-            <p id="content13">Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente
-                pelo formulário de contato no site oficial.</p>
-        </section>
+                <p id="content13">Você pode entrar em contato com o escritório através de telefone, e-mail, ou diretamente
+                    pelo formulário de contato no site oficial.</p>
+            </section>
 
-        <section id="accordion14">
-            <input type="checkbox" name="collapse" value="" id="handle14">
-            <h2 id="handle14">Quais as condições de pagamento?
-                <label id="label14" onclick="trocaSeta(this.id)" for="handle14">&#11166;</label>
-            </h2>
+            <section id="accordion14">
+                <input type="checkbox" name="collapse" value="" id="handle14">
+                <h2 id="handle14">Quais as condições de pagamento?
+                    <label id="label14" onclick="trocaSeta(this.id)" for="handle14">&#11166;</label>
+                </h2>
 
-            <p id="content14">As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com
-                o tipo de serviço que você precisa.</p>
-        </section>
-    </div>
+                <p id="content14">As condições de pagamento podem ser negociadas diretamente com o escritório, de acordo com
+                    o tipo de serviço que você precisa.</p>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <span>© Copyright 2013-2025 Camposman Agência de Advocacia.</span>
     </footer>
-
 </body>
 
 </html>

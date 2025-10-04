@@ -1,9 +1,10 @@
-article {
-  margin-top: 2em;
+main {
+  /* margin-top: 2em; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 3em;
+  margin: 0;
 }
 
 .card {
@@ -55,10 +56,6 @@ body {
 
 h2{
   margin: 2rem 0;
-}
-
-article{
-  margin: 0;
 }
 
 @media (max-width: 600px) {

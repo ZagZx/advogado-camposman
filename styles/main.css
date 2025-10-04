@@ -6,7 +6,9 @@
 }
 
 body {
+    min-height: 100vh;
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: #F1E9BB;
 }
@@ -17,7 +19,6 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 
     div {
         width: 70%;
@@ -33,6 +34,17 @@ header a {
     border-radius: 0.5rem;
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+header nav:last-child div{
+    display: flex;
+    gap: 0.5em;
+}
+
 header a:hover {
     background-color: #F1E9BB;
     color: #CF6123;
@@ -42,7 +54,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position:static;
+    position: relative;
     bottom: 0;
     background-color: #F3C363;
     height: 8rem;
@@ -56,6 +68,7 @@ main {
     width: 100%;
     align-items: center;
     flex-direction: column;
+    flex: 1;
     z-index: 1;
 }
 
@@ -64,13 +77,14 @@ main {
     height: 150px;
     border-radius: 100%;
     border: 0.4em solid #F3C363;
-    position: absolute;
-    top: 2px;
-    left: 2em;
+    position: relative;
+    top: 1em;
+    margin-left: 2em;
     width: 150px;
     z-index: 2;
 }
 
 #logoa {
     background-color: transparent;
+    padding: 0;
 }

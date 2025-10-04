@@ -125,7 +125,7 @@ img {
         max-height: none;
     }
 
-    article div {
+    main div {
         display: flex;
         flex-flow: column nowrap;
 

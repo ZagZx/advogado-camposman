@@ -8,11 +8,13 @@
     width: 100px;
     height: 100px;
     margin: 1.5em 0 0;
-    left: 0;
-    top: 0;
+    top: 0; 
+    margin: 0;
+    margin-left: 0.5em;
   }
 
   header div {
+    width: auto;
     display: flex;
     flex-flow: row wrap;
     gap: 2em;

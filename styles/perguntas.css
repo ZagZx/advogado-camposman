@@ -1,45 +1,49 @@
+label{
+  user-select: none;
+}
+
 .perguntas {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.7em;
+  align-items: center;
+
+  section {
     display: flex;
-    flex-flow: column nowrap;
-    gap: 0.7em;
+    flex-direction: column;
     align-items: center;
+    font-size: 1em;
+    background-color: #CF6123;
+    border-radius: 1em;
+  }
 
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1em;
-        background-color: #CF6123;
-        border-radius: 1em;
-    }
+  section img {
+    background-color: #CF6123;
+    border-radius: 1em;
+  }
 
-    section img {
-        background-color: #CF6123;
-        border-radius: 1em;
-    }
+  section h2,
+  label {
+    background-color: #CF6123;
+    border-radius: 1em;
+  }
 
-    section h2,
-    label {
-        background-color: #CF6123;
-        border-radius: 1em;
-    }
+  section h2 {
+    margin-left: 0.5em;
+    flex-grow: 1;
+  }
 
-    section h2 {
-        margin-left: 0.5em;
-        flex-grow: 1;
-    }
-
-    section p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 95%;
-        justify-self: center;
-        font-size: 1em;
-        color: black;
-        font-weight: bolder;
-        text-align: justify;
-    }
+  section p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    justify-self: center;
+    font-size: 1em;
+    color: black;
+    font-weight: bolder;
+    text-align: justify;
+  }
 }
 
 * {

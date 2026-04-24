@@ -4,7 +4,7 @@ Um projeto da matéria de Design Web passado pelo professor Romerito Campos (o g
 
 # Colaboradores
 
-- Pedro ([ZagZx](https://github.com/zagzx))
+- Pedro Victor([ZagZx](https://github.com/zagzx))
 - Givanilson ([Joyuv](https://github.com/joyuv))
 - Abraão ([Abraão Ferro](https://github.com/Abraao3))
 - Mickeias ([Mickeias2812](https://github.com/mickeias2812))
